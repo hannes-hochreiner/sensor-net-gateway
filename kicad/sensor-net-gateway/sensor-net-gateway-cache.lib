@@ -1,0 +1,462 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# ARM_CORTEX-DEBUG
+#
+DEF ARM_CORTEX-DEBUG CD 0 40 Y Y 1 F N
+F0 "CD" 350 -450 60 H V C CNN
+F1 "ARM_CORTEX-DEBUG" 0 0 60 V V C CNN
+F2 "" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+DRAW
+S -450 400 450 -400 0 1 0 N
+X VCC 1 -650 200 200 R 50 50 1 1 W
+X nRESET 10 650 -200 200 L 50 50 1 1 O
+X SWDIO 2 650 200 200 L 50 50 1 1 B
+X GND 3 -650 100 200 R 50 50 1 1 W
+X SWDCLK 4 650 100 200 L 50 50 1 1 O
+X GND 5 -650 0 200 R 50 50 1 1 W
+X SWO 6 650 0 200 L 50 50 1 1 I
+X KEY 7 -650 -100 200 R 50 50 1 1 N
+X NC 8 650 -100 200 L 50 50 1 1 N
+X GND 9 -650 -200 200 R 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# Device_Antenna_Shield
+#
+DEF Device_Antenna_Shield AE 0 40 N N 1 F N
+F0 "AE" -75 175 50 H V R CNN
+F1 "Device_Antenna_Shield" -75 100 50 H V R CNN
+F2 "" 0 100 50 H I C CNN
+F3 "" 0 100 50 H I C CNN
+DRAW
+A -1 -73 32 -882 1242 0 1 0 N 0 -105 -20 -45
+A 1 -73 32 -918 558 0 1 0 N 0 -105 20 -45
+C 30 -75 7 0 1 0 F
+P 2 0 1 0 0 -100 0 0 N
+P 2 0 1 10 0 200 0 -150 N
+P 2 0 1 0 30 -75 100 -75 N
+P 2 0 1 0 100 -100 100 -75 N
+P 3 0 1 10 50 200 0 0 -50 200 N
+X A 1 0 -200 100 U 50 50 1 1 I
+X Shield 2 100 -200 100 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# Device_C
+#
+DEF Device_C C 0 10 N Y 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "Device_C" 25 -100 50 H V L CNN
+F2 "" 38 -150 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 20 -80 -30 80 -30 N
+P 2 0 1 20 -80 30 80 30 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_CP
+#
+DEF Device_CP C 0 10 N Y 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "Device_CP" 25 -100 50 H V L CNN
+F2 "" 38 -150 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ CP_*
+$ENDFPLIST
+DRAW
+S -90 20 -90 40 0 1 0 N
+S -90 20 90 20 0 1 0 N
+S 90 -20 -90 -40 0 1 0 F
+S 90 40 -90 40 0 1 0 N
+S 90 40 90 20 0 1 0 N
+P 2 0 1 0 -70 90 -30 90 N
+P 2 0 1 0 -50 110 -50 70 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_R
+#
+DEF Device_R R 0 0 N Y 1 F N
+F0 "R" 80 0 50 V V C CNN
+F1 "Device_R" 0 0 50 V V C CNN
+F2 "" -70 0 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+S -40 -100 40 100 0 1 10 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Hammond_1593JGY
+#
+DEF Hammond_1593JGY B 0 40 Y Y 1 F N
+F0 "B" 0 0 100 H V C CNN
+F1 "Hammond_1593JGY" 0 0 100 H V C CNN
+F2 "Hammond:1593JGY" 0 -800 100 H I C CNN
+F3 "http://www.hammondmfg.com/pdf/1593J.pdf" 0 -950 100 H I C CNN
+F4 "HM867-ND" 0 -650 100 H I C CNN "DigiKey_PartNumber"
+F5 "Hammond Manufacturing" 0 -500 100 H I C CNN "Manufacturer"
+F6 "1593JGY" 0 -350 100 H I C CNN "Manufacturer_PartNumber"
+DRAW
+S -400 350 400 -400 0 1 0 N
+X GND 1 400 -200 200 L 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# Harwin_M50-3130545
+#
+DEF Harwin_M50-3130545 M 0 40 Y Y 1 F N
+F0 "M" 0 -350 50 H V C CNN
+F1 "Harwin_M50-3130545" 0 350 50 H V C CNN
+F2 "Harwin:M50-3130545" 0 -900 50 H I C CNN
+F3 "https://cdn.harwin.com/pdfs/M50-313.pdf" 0 -800 50 H I C CNN
+F4 "952-3585-ND" 0 -500 50 H I C CNN "DigiKey_PartNumber"
+F5 "Harwin Inc." 0 -600 50 H I C CNN "Manufacturer"
+F6 "M50-3130545" 0 -700 50 H I C CNN "Manufacturer_PartNumber"
+DRAW
+S -100 300 100 -300 0 1 0 N
+X 1 1 -300 200 200 R 50 50 1 1 P
+X 2 2 -300 100 200 R 50 50 1 1 P
+X 3 3 -300 0 200 R 50 50 1 1 P
+X 4 4 -300 -100 200 R 50 50 1 1 P
+X 5 5 -300 -200 200 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Hochreiner_logo
+#
+DEF Hochreiner_logo L 0 40 Y Y 1 F N
+F0 "L" 0 -50 50 H V C CNN
+F1 "Hochreiner_logo" 0 50 50 H V C CNN
+F2 "Hochreiner:logo" -100 -150 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+ENDDRAW
+ENDDEF
+#
+# HopeRF_RFM98
+#
+DEF HopeRF_RFM98 RFM 0 40 Y Y 1 F N
+F0 "RFM" 200 -450 60 H V C CNN
+F1 "HopeRF_RFM98" 0 0 60 V V C CNN
+F2 "HopeRF:RFM98" 0 -1250 60 H I C CNN
+F3 "https://github.com/SeeedDocument/RFM95-98_LoRa_Module/blob/master/RFM95_96_97_98_DataSheet.pdf" 0 -1150 60 H I C CNN
+F4 "1597-1491-ND" 0 -850 50 H I C CNN "DigiKey_PartNumber"
+F5 "Seeed Technology Co., Ltd" 0 -950 50 H I C CNN "Manufacturer"
+F6 "109990165" 0 -1050 50 H I C CNN "Manufacturer_PartNumber"
+DRAW
+S -350 400 350 -400 0 1 0 N
+X GND 1 -550 350 200 R 50 50 1 1 W
+X GND 10 550 -250 200 L 50 50 1 1 W
+X DIO3 11 550 -150 200 L 50 50 1 1 B
+X DIO4 12 550 -50 200 L 50 50 1 1 B
+X 3.3V 13 550 50 200 L 50 50 1 1 W
+X DIO0 14 550 150 200 L 50 50 1 1 B
+X DIO1 15 550 250 200 L 50 50 1 1 B
+X DIO2 16 550 350 200 L 50 50 1 1 B
+X MISO 2 -550 250 200 R 50 50 1 1 O
+X MOSI 3 -550 150 200 R 50 50 1 1 I
+X SCK 4 -550 50 200 R 50 50 1 1 I
+X NSS 5 -550 -50 200 R 50 50 1 1 I
+X RESET 6 -550 -150 200 R 50 50 1 1 I
+X DIO5 7 -550 -250 200 R 50 50 1 1 B
+X GND 8 -550 -350 200 R 50 50 1 1 W
+X ANT 9 550 -350 200 L 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+# MicrochipTechnology_ATECC508A-MAHCZ-S
+#
+DEF MicrochipTechnology_ATECC508A-MAHCZ-S A 0 40 Y Y 1 F N
+F0 "A" 250 -300 50 H V C CNN
+F1 "MicrochipTechnology_ATECC508A-MAHCZ-S" 0 300 50 H V C CNN
+F2 "MicrochipTechnology:ATECC508A-MAHCZ-S" 0 -900 50 H I C CNN
+F3 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en603815" 0 -800 50 H I C CNN
+F4 "1611-ATECC508A-MAHCZ-SCT-ND" 0 -500 50 H I C CNN "DigiKey_PartNumber"
+F5 "Microchip Technology" 0 -600 50 H I C CNN "Manufacturer"
+F6 "ATECC508A-MAHCZ-S" 0 -700 50 H I C CNN "Manufacturer_PartNumber"
+DRAW
+S -300 250 300 -250 0 1 0 N
+X NC 1 -500 150 200 R 50 50 1 1 N
+X NC 2 -500 50 200 R 50 50 1 1 N
+X NC 3 -500 -50 200 R 50 50 1 1 N
+X GND 4 -500 -150 200 R 50 50 1 1 W
+X SDA 5 500 -150 200 L 50 50 1 1 B
+X SCL 6 500 -50 200 L 50 50 1 1 I
+X NC 7 500 50 200 L 50 50 1 1 N
+X VCC 8 500 150 200 L 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# MicrochipTechnology_DSC6011HE2A-032.0000
+#
+DEF MicrochipTechnology_DSC6011HE2A-032.0000 O 0 40 Y Y 1 F N
+F0 "O" 350 -250 50 H V C CNN
+F1 "MicrochipTechnology_DSC6011HE2A-032.0000" 0 250 50 H V C CNN
+F2 "MicrochipTechnology:DSC6011HE2A-032.0000" 250 -350 50 H I C CNN
+F3 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en587489" 0 -750 50 H I C CNN
+F4 "DSC6011HE2A-032.0000-ND" 0 -650 50 H I C CNN "DigiKey_PartNumber"
+F5 "Microchip Technology" 0 -550 50 H I C CNN "Manufacturer"
+F6 "DSC6011HE2A-032.0000" 0 -450 50 H I C CNN "Manufacturer_PartNumber"
+DRAW
+S -400 200 400 -200 0 1 0 N
+X ~STBY 1 -600 100 200 R 50 50 1 1 I
+X GND 2 -600 -100 200 R 50 50 1 1 W
+X Output 3 600 -100 200 L 50 50 1 1 O
+X VDD 4 600 100 200 L 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# STMicroelectronics_STM32L021K4T6
+#
+DEF STMicroelectronics_STM32L021K4T6 STM 0 40 Y Y 1 F N
+F0 "STM" 600 -750 60 H V C CNN
+F1 "STMicroelectronics_STM32L021K4T6" 0 0 60 H V C CNN
+F2 "Package_QFP:LQFP-32_7x7mm_P0.8mm" 0 -1900 60 H I C CNN
+F3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/86/a6/5f/95/33/50/4e/d6/DM00206858.pdf/files/DM00206858.pdf/jcr:content/translations/en.DM00206858.pdf" 0 -1800 60 H I C CNN
+F4 "497-17903-ND" 0 -1500 50 H I C CNN "DigiKey_PartNumber"
+F5 "STMicroelectronics" 0 -1600 50 H I C CNN "Manufacturer"
+F6 "STM32L021K4T6" 0 -1700 50 H I C CNN "Manufacturer_PartNumber"
+DRAW
+S -700 650 700 -650 0 1 0 N
+X VDD 1 -900 350 200 R 50 50 1 1 W
+X PA4 10 -250 -850 200 U 50 50 1 1 B
+X PA5 11 -150 -850 200 U 50 50 1 1 B
+X PA6 12 -50 -850 200 U 50 50 1 1 B
+X PA7 13 50 -850 200 U 50 50 1 1 B
+X PB0 14 150 -850 200 U 50 50 1 1 B
+X PB1 15 250 -850 200 U 50 50 1 1 B
+X VSS 16 350 -850 200 U 50 50 1 1 W
+X VDD 17 900 -350 200 L 50 50 1 1 W
+X PA8 18 900 -250 200 L 50 50 1 1 B
+X PA9 19 900 -150 200 L 50 50 1 1 B
+X PC14 2 -900 250 200 R 50 50 1 1 B
+X PA10 20 900 -50 200 L 50 50 1 1 B
+X PA11 21 900 50 200 L 50 50 1 1 B
+X PA12 22 900 150 200 L 50 50 1 1 B
+X PA13 23 900 250 200 L 50 50 1 1 B
+X PA14 24 900 350 200 L 50 50 1 1 B
+X PA15 25 350 850 200 D 50 50 1 1 B
+X PB3 26 250 850 200 D 50 50 1 1 B
+X PB4 27 150 850 200 D 50 50 1 1 B
+X PB5 28 50 850 200 D 50 50 1 1 B
+X PB6 29 -50 850 200 D 50 50 1 1 B
+X PC15 3 -900 150 200 R 50 50 1 1 B
+X PB7 30 -150 850 200 D 50 50 1 1 B
+X PB9 31 -250 850 200 D 50 50 1 1 B
+X VSS 32 -350 850 200 D 50 50 1 1 W
+X ~RST 4 -900 50 200 R 50 50 1 1 I
+X VDDA 5 -900 -50 200 R 50 50 1 1 W
+X PA0 6 -900 -150 200 R 50 50 1 1 B
+X PA1 7 -900 -250 200 R 50 50 1 1 B
+X PA2 8 -900 -350 200 R 50 50 1 1 B
+X PA3 9 -350 -850 200 U 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+# Switch_SW_Push
+#
+DEF Switch_SW_Push SW 0 40 N N 1 F N
+F0 "SW" 50 100 50 H V L CNN
+F1 "Switch_SW_Push" 0 -60 50 H V C CNN
+F2 "" 0 200 50 H I C CNN
+F3 "" 0 200 50 H I C CNN
+DRAW
+C -80 0 20 0 1 0 N
+C 80 0 20 0 1 0 N
+P 2 0 1 0 0 50 0 120 N
+P 2 0 1 0 100 50 -100 50 N
+X 1 1 -200 0 100 R 50 50 0 1 P
+X 2 2 200 0 100 L 50 50 0 1 P
+ENDDRAW
+ENDDEF
+#
+# power_GND
+#
+DEF power_GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# pspice_INDUCTOR
+#
+DEF pspice_INDUCTOR L 0 0 N Y 1 F N
+F0 "L" 0 100 50 H V C CNN
+F1 "pspice_INDUCTOR" 0 -50 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+A -150 0 50 1 1799 0 1 0 N -100 0 -200 0
+A -50 0 50 1 1799 0 1 0 N 0 0 -100 0
+A 50 0 50 1 1799 0 1 0 N 100 0 0 0
+A 150 0 50 1 1799 0 1 0 N 200 0 100 0
+X 1 1 -250 0 50 R 30 30 1 1 I
+X 2 2 250 0 50 L 30 30 1 1 I
+ENDDRAW
+ENDDEF
+#
+# sensor-net-gateway_FT230XQ
+#
+DEF sensor-net-gateway_FT230XQ U 0 40 Y Y 1 F N
+F0 "U" -550 600 50 H V L CNN
+F1 "sensor-net-gateway_FT230XQ" 300 600 50 H V L CNN
+F2 "Package_DFN_QFN:QFN-16-1EP_4x4mm_P0.65mm_EP2.5x2.5mm" 550 -700 50 H I C CNN
+F3 "http://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT230X.pdf" -550 600 50 H I C CNN
+F4 "768-1130-1-ND" -450 700 50 H V C CNN "DigiKey_PartNumber"
+F5 "FTDI, Future Technology Devices International Ltd" -350 800 50 H V C CNN "Manufacturer"
+F6 "FT230XQ-R" -250 900 50 H V C CNN "Manufacturer_PartNumber"
+$FPLIST
+ QFN*4x4mm*P0.65mm*
+$ENDFPLIST
+DRAW
+S -550 550 550 -550 0 1 10 f
+X VCCIO 1 100 700 150 D 50 50 1 1 W
+X VCC 10 -100 700 150 D 50 50 1 1 W
+X CBUS1 11 700 -200 150 L 50 50 1 1 B
+X CBUS0 12 700 -100 150 L 50 50 1 1 B
+X GND 13 0 -700 150 U 50 50 1 1 W
+X CBUS3 14 700 -400 150 L 50 50 1 1 B
+X TXD 15 700 400 150 L 50 50 1 1 O
+X ~RTS 16 700 200 150 L 50 50 1 1 I
+X GND 17 100 -700 150 U 50 50 1 1 W
+X RXD 2 700 300 150 L 50 50 1 1 I
+X GND 3 -100 -700 150 U 50 50 1 1 W
+X ~CTS 4 700 100 150 L 50 50 1 1 I
+X CBUS2 5 700 -300 150 L 50 50 1 1 B
+X USBDP 6 -700 0 150 R 50 50 1 1 B
+X USBDM 7 -700 100 150 R 50 50 1 1 B
+X 3V3OUT 8 -700 400 150 R 50 50 1 1 w
+X ~RESET 9 -700 -200 150 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# sensor-net-gateway_Ferrite_Bead
+#
+DEF sensor-net-gateway_Ferrite_Bead FB 0 0 N Y 1 F N
+F0 "FB" -150 25 50 V V C CNN
+F1 "sensor-net-gateway_Ferrite_Bead" 150 0 50 V V C CNN
+F2 "" -70 0 50 V I C CNN
+F3 "https://assets.lairdtech.com/home/brandworld/files/MI0805K601R-10.pdf" -150 25 50 V I C CNN
+F4 "240-2390-1-ND" -50 125 50 V V C CNN "DigiKey_PartNumber"
+F5 "Laird-Signal Integrity Products" 50 225 50 V V C CNN "Manufacturer"
+F6 "MI0805K601R-10" 150 325 50 V V C CNN "Manufacturer_PartNumber"
+$FPLIST
+ Inductor_*
+ L_*
+ *Ferrite*
+$ENDFPLIST
+DRAW
+P 2 0 1 0 0 -50 0 -48 N
+P 2 0 1 0 0 50 0 51 N
+P 5 0 1 0 -109 16 -67 89 109 -12 66 -85 -109 16 N
+X ~ 1 0 150 100 D 50 50 1 1 P
+X ~ 2 0 -150 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# sensor-net-gateway_MIC23050-SYML-TR
+#
+DEF sensor-net-gateway_MIC23050-SYML-TR S 0 40 Y Y 1 F N
+F0 "S" 300 -300 50 H V C CNN
+F1 "sensor-net-gateway_MIC23050-SYML-TR" 0 350 50 H V C CNN
+F2 "" 200 -400 50 H I C CNN
+F3 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en580286" 0 -950 50 H I C CNN
+F4 "576-3351-1-ND" 0 -850 50 H I C CNN "DigiKey_PartNumber"
+F5 "Microchip Technology" 0 -750 50 H I C CNN "Manufacturer"
+F6 "MIC23050-SYML-TR" 0 -650 50 H I C CNN "Manufacturer_PartNumber"
+DRAW
+S -400 250 400 -250 0 1 0 N
+X SW 1 600 150 200 L 50 50 1 1 O
+X EN 2 -600 0 200 R 50 50 1 1 I
+X NC 3 -600 -150 200 R 50 50 1 1 N N
+X SNS 4 600 0 200 L 50 50 1 1 I
+X CFF 5 600 -150 200 L 50 50 1 1 B
+X AGND 6 -100 -450 200 U 50 50 1 1 W
+X VIN 7 -600 150 200 R 50 50 1 1 W
+X PGND 8 100 -450 200 U 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# sensor-net-gateway_MIC94310-MYM5-TR
+#
+DEF sensor-net-gateway_MIC94310-MYM5-TR L 0 40 Y Y 1 F N
+F0 "L" 0 300 50 H V C CNN
+F1 "sensor-net-gateway_MIC94310-MYM5-TR" 0 200 50 H V C CNN
+F2 "Package_TO_SOT_SMD:SOT-23-5" 0 -1250 50 H I C CNN
+F3 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en580409" 0 -1150 50 H I C CNN
+F4 "MIC94310-MYM5-CT-ND" 0 -1050 50 H I C CNN "DigiKey_PartNumber"
+F5 "Microchip Technology" 0 -950 50 H I C CNN "Manufacturer"
+F6 "MIC94310-MYM5-TR" 0 -850 50 H I C CNN "Manufacturer_PartNumber"
+DRAW
+S -350 150 350 -200 0 1 0 N
+X VIN 1 -550 50 200 R 50 50 1 1 W
+X GND 2 0 -400 200 U 50 50 1 1 W
+X EN 3 -550 -50 200 R 50 50 1 1 I
+X NC 4 550 -50 200 L 50 50 1 1 N N
+X VOUT 5 550 50 200 L 50 50 1 1 w
+ENDDRAW
+ENDDEF
+#
+# sensor-net-gateway_USBLC6-2SC6
+#
+DEF sensor-net-gateway_USBLC6-2SC6 U 0 40 Y Y 1 F N
+F0 "U" 500 -300 50 H V C CNN
+F1 "sensor-net-gateway_USBLC6-2SC6" 0 350 50 H V C CNN
+F2 "Package_TO_SOT_SMD:SOT-23-6" 0 -200 50 H I C CNN
+F3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/06/1d/48/9c/6c/20/4a/b2/CD00050750.pdf/files/CD00050750.pdf/jcr:content/translations/en.CD00050750.pdf" 0 -200 50 H I C CNN
+F4 "497-5235-1-ND" 600 -200 50 H V C CNN "DigiKey_PartNumber"
+F5 "STMicroelectronics" 700 -100 50 H V C CNN "Manufacturer"
+F6 "USBLC6-2SC6" 800 0 50 H V C CNN "Manufacturer_PartNumber"
+DRAW
+S -550 250 550 -250 0 1 0 N
+X IN/USBDP 1 -750 150 200 R 50 50 1 1 B
+X GND 2 -750 0 200 R 50 50 1 1 W
+X IN/USBDM 3 -750 -150 200 R 50 50 1 1 B
+X OUT/USBDM 4 750 -150 200 L 50 50 1 1 B
+X V_BUS 5 750 0 200 L 50 50 1 1 W
+X OUT/USBDP 6 750 150 200 L 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+# sensor-net-gateway_USB_micro_ab
+#
+DEF sensor-net-gateway_USB_micro_ab U 0 40 Y Y 1 F N
+F0 "U" 350 -350 60 H V C CNN
+F1 "sensor-net-gateway_USB_micro_ab" 100 0 60 H V C CNN
+F2 "" 250 -450 60 H I C CNN
+F3 "https://www.molex.com/pdm_docs/sd/475890001_sd.pdf" 350 -350 60 H I C CNN
+F4 "WM17143CT-ND" 450 -250 50 H V C CNN "DigiKey_PartNumber"
+F5 "Molex" 550 -150 50 H V C CNN "Manufacturer"
+F6 "0475890001" 650 -50 50 H V C CNN "Manufacturer_PartNumber"
+DRAW
+S -400 300 450 -300 0 1 0 N
+X VBUS 1 -600 200 200 R 50 50 1 1 w
+X DM 2 -600 100 200 R 50 50 1 1 B
+X DP 3 -600 0 200 R 50 50 1 1 B
+X ID 4 -600 -100 200 R 50 50 1 1 B
+X GND 5 -600 -200 200 R 50 50 1 1 w
+ENDDRAW
+ENDDEF
+#
+#End Library

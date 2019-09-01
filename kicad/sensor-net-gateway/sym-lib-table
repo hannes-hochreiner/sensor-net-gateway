@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name sensor-net-gateway)(type Legacy)(uri /home/hannes/Repository/sensor-net-gateway/kicad/sensor-net-gateway/sensor-net-gateway.lib)(options "")(descr ""))
+  (lib (name sensor-net-gateway-rescue)(type Legacy)(uri ${KIPRJMOD}/sensor-net-gateway-rescue.lib)(options "")(descr ""))
+)

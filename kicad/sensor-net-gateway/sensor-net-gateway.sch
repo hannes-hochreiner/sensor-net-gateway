@@ -1,0 +1,676 @@
+EESchema Schematic File Version 4
+LIBS:sensor-net-gateway-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 6450 750  0    50   ~ 0
+Power
+$Comp
+L sensor-net-gateway:MIC23050-SYML-TR S1
+U 1 1 5D623B6B
+P 7450 1300
+F 0 "S1" H 7450 1715 50  0000 C CNN
+F 1 "MIC23050-SYML-TR" H 7450 1624 50  0000 C CNN
+F 2 "sensor-net-gateway:MIC23050-SYML-TR" H 7650 900 50  0001 C CNN
+F 3 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en580286" H 7750 1000 50  0001 C CNN
+F 4 "576-3351-1-ND" H 7450 1805 50  0001 C CNN "DigiKey_PartNumber"
+F 5 "Microchip Technology" H 7450 1715 50  0001 C CNN "Manufacturer"
+F 6 "MIC23050-SYML-TR" H 7450 1623 50  0001 C CNN "Manufacturer_PartNumber"
+	1    7450 1300
+	1    0    0    -1  
+$EndComp
+Text Label 6600 1150 2    50   ~ 0
+VBUS
+Wire Wire Line
+	6600 1150 6650 1150
+Wire Wire Line
+	6750 1150 6750 1300
+Wire Wire Line
+	6750 1300 6850 1300
+Connection ~ 6750 1150
+Wire Wire Line
+	6750 1150 6850 1150
+$Comp
+L Device:C C7
+U 1 1 5D625BF4
+P 6650 1450
+F 0 "C7" H 6765 1496 50  0000 L CNN
+F 1 "4.7µF" H 6765 1405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6688 1300 50  0001 C CNN
+F 3 "~" H 6650 1450 50  0001 C CNN
+F 4 "1276-1907-1-ND" H 6650 1450 50  0001 C CNN "DigiKey_PartNumber"
+F 5 "Samsung Electro-Mechanics" H 6650 1450 50  0001 C CNN "Manufacturer"
+F 6 "CL10A475MQ8NNNC" H 6650 1450 50  0001 C CNN "Manufacturer_PartNumber"
+	1    6650 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 1300 6650 1150
+Connection ~ 6650 1150
+Wire Wire Line
+	6650 1150 6750 1150
+$Comp
+L pspice:INDUCTOR L1
+U 1 1 5D626698
+P 8450 1150
+F 0 "L1" H 8450 1365 50  0000 C CNN
+F 1 "1µH" H 8450 1274 50  0000 C CNN
+F 2 "Inductor_SMD:L_0805_2012Metric" H 8450 1150 50  0001 C CNN
+F 3 "~" H 8450 1150 50  0001 C CNN
+F 4 "445-6391-1-ND" H 8450 1150 50  0001 C CNN "DigiKey_PartNumber"
+	1    8450 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 1150 8200 1150
+$Comp
+L Device:C C9
+U 1 1 5D62710D
+P 8800 1450
+F 0 "C9" H 8915 1496 50  0000 L CNN
+F 1 "4.7µF" H 8915 1405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8838 1300 50  0001 C CNN
+F 3 "~" H 8800 1450 50  0001 C CNN
+F 4 "1276-1907-1-ND" H 8800 1450 50  0001 C CNN "DigiKey_PartNumber"
+	1    8800 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C8
+U 1 1 5D6271D9
+P 8300 1450
+F 0 "C8" H 8415 1496 50  0000 L CNN
+F 1 "560pF" H 8415 1405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8338 1300 50  0001 C CNN
+F 3 "~" H 8300 1450 50  0001 C CNN
+F 4 "1276-2315-1-ND" H 8300 1450 50  0001 C CNN "DigiKey_PartNumber"
+	1    8300 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 1300 8300 1300
+Wire Wire Line
+	8300 1300 8800 1300
+Connection ~ 8300 1300
+Wire Wire Line
+	8800 1300 8800 1150
+Wire Wire Line
+	8800 1150 8700 1150
+Connection ~ 8800 1300
+Wire Wire Line
+	8300 1600 8050 1600
+Wire Wire Line
+	8050 1600 8050 1450
+$Comp
+L power:GND #PWR05
+U 1 1 5D629F61
+P 7450 1900
+F 0 "#PWR05" H 7450 1650 50  0001 C CNN
+F 1 "GND" H 7455 1727 50  0000 C CNN
+F 2 "" H 7450 1900 50  0001 C CNN
+F 3 "" H 7450 1900 50  0001 C CNN
+	1    7450 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 1600 6650 1900
+Wire Wire Line
+	6650 1900 7350 1900
+Wire Wire Line
+	7450 1900 7550 1900
+Wire Wire Line
+	8800 1900 8800 1600
+Connection ~ 7450 1900
+Wire Wire Line
+	7550 1750 7550 1900
+Connection ~ 7550 1900
+Wire Wire Line
+	7550 1900 8800 1900
+Wire Wire Line
+	7350 1750 7350 1900
+Connection ~ 7350 1900
+Wire Wire Line
+	7350 1900 7450 1900
+$Comp
+L sensor-net-gateway:MIC94310-MYM5-TR L2
+U 1 1 5D630409
+P 10300 1350
+F 0 "L2" H 10300 1665 50  0000 C CNN
+F 1 "MIC94310-MYM5-TR" H 10300 1574 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 10300 100 50  0001 C CNN
+F 3 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en580409" H 10300 200 50  0001 C CNN
+F 4 "MIC94310-MYM5-CT-ND" H 10300 300 50  0001 C CNN "DigiKey_PartNumber"
+F 5 "Microchip Technology" H 10300 400 50  0001 C CNN "Manufacturer"
+F 6 "MIC94310-MYM5-TR" H 10300 500 50  0001 C CNN "Manufacturer_PartNumber"
+	1    10300 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C10
+U 1 1 5D6304E8
+P 9250 1450
+F 0 "C10" H 9365 1496 50  0000 L CNN
+F 1 "0.47µF" H 9365 1405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9288 1300 50  0001 C CNN
+F 3 "~" H 9250 1450 50  0001 C CNN
+F 4 "1276-2082-1-ND" H 9250 1450 50  0001 C CNN "DigiKey_PartNumber"
+	1    9250 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 1300 9250 1300
+Wire Wire Line
+	9250 1300 9650 1300
+Connection ~ 9250 1300
+Wire Wire Line
+	9650 1300 9650 1400
+Wire Wire Line
+	9650 1400 9750 1400
+Connection ~ 9650 1300
+Wire Wire Line
+	9650 1300 9750 1300
+Wire Wire Line
+	10300 1750 10300 1900
+Wire Wire Line
+	10300 1900 9250 1900
+Connection ~ 8800 1900
+Wire Wire Line
+	9250 1600 9250 1900
+Connection ~ 9250 1900
+Wire Wire Line
+	9250 1900 8800 1900
+$Comp
+L Device:C C12
+U 1 1 5D6371A2
+P 10850 1450
+F 0 "C12" H 10965 1496 50  0000 L CNN
+F 1 "10µF" H 10965 1405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10888 1300 50  0001 C CNN
+F 3 "~" H 10850 1450 50  0001 C CNN
+F 4 "1276-1119-1-ND" H 10850 1450 50  0001 C CNN "DigiKey_PartNumber"
+	1    10850 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10850 1600 10850 1900
+Wire Wire Line
+	10850 1900 10300 1900
+Connection ~ 10300 1900
+Text Label 10950 1300 0    50   ~ 0
+3V0
+Wire Wire Line
+	10950 1300 10850 1300
+Connection ~ 10850 1300
+$Comp
+L power:GND #PWR07
+U 1 1 5D65EA28
+P 2450 5800
+F 0 "#PWR07" H 2450 5550 50  0001 C CNN
+F 1 "GND" H 2455 5627 50  0000 C CNN
+F 2 "" H 2450 5800 50  0001 C CNN
+F 3 "" H 2450 5800 50  0001 C CNN
+	1    2450 5800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2550 5800 2450 5800
+$Sheet
+S 2550 5700 1300 1100
+U 5D6611E3
+F0 "Radio" 50
+F1 "radio.sch" 50
+F2 "DIO2" I L 2550 6400 50 
+F3 "DIO1" I L 2550 6550 50 
+F4 "DIO0" I L 2550 6700 50 
+F5 "DIO4" I L 2550 6100 50 
+F6 "DIO3" I L 2550 6250 50 
+F7 "SPI_MISO" I R 3850 6700 50 
+F8 "SPI_MOSI" I R 3850 6550 50 
+F9 "SPI_CLK" I R 3850 6400 50 
+F10 "~SPI_CS" I R 3850 6250 50 
+F11 "RESET" I R 3850 6100 50 
+F12 "DIO5" I L 2550 5950 50 
+F13 "ANT" I R 3850 5950 50 
+F14 "3V3" I R 3850 5800 50 
+F15 "GND" I L 2550 5800 50 
+$EndSheet
+$Sheet
+S 5500 3450 1200 1700
+U 5D630625
+F0 "MCU" 50
+F1 "mcu.sch" 50
+F2 "PB5" I R 6700 4400 50 
+F3 "PB4" I L 5500 4850 50 
+F4 "PB3" I L 5500 4750 50 
+F5 "PA15" I L 5500 4950 50 
+F6 "PA8" I R 6700 4950 50 
+F7 "VCC" I R 6700 4000 50 
+F8 "GND" I R 6700 3900 50 
+F9 "PB1" I R 6700 5050 50 
+F10 "PA6" I R 6700 4850 50 
+F11 "PA3" I R 6700 4300 50 
+F12 "PA2" I R 6700 4750 50 
+F13 "PC15" I R 6700 4600 50 
+F14 "PC14" I R 6700 4500 50 
+F15 "I2C.SDA" I R 6700 3500 50 
+F16 "I2C.SCL" I R 6700 3600 50 
+F17 "UART.RTS" I L 5500 4300 50 
+F18 "UART.CTS" I L 5500 4200 50 
+F19 "UART.RX" I L 5500 4100 50 
+F20 "UART.TX" I L 5500 4000 50 
+F21 "SPI.MISO" I L 5500 3800 50 
+F22 "SPI.MOSI" I L 5500 3700 50 
+F23 "SPI.SCK" I L 5500 3600 50 
+F24 "SPI.~CS" I L 5500 3500 50 
+$EndSheet
+Text Label 5050 3700 0    50   ~ 0
+SPI.MOSI
+Text Label 5050 3500 0    50   ~ 0
+SPI.~CS
+Text Label 5050 3600 0    50   ~ 0
+SPI.SCK
+Text Label 5050 3800 0    50   ~ 0
+SPI.MISO
+Text Label 5450 4000 2    50   ~ 0
+UART.TX
+Text Label 5450 4200 2    50   ~ 0
+UART.CTS
+Text Label 5450 4300 2    50   ~ 0
+UART.RTS
+$Comp
+L power:GND #PWR08
+U 1 1 5D634771
+P 6950 3900
+F 0 "#PWR08" H 6950 3650 50  0001 C CNN
+F 1 "GND" V 6955 3772 50  0000 R CNN
+F 2 "" H 6950 3900 50  0001 C CNN
+F 3 "" H 6950 3900 50  0001 C CNN
+	1    6950 3900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6950 3900 6700 3900
+Text Label 6700 4000 0    50   ~ 0
+3V0
+Entry Wire Line
+	4950 3600 5050 3500
+Wire Wire Line
+	5500 3500 5050 3500
+Wire Wire Line
+	5500 3600 5050 3600
+Wire Wire Line
+	5050 3700 5500 3700
+Wire Wire Line
+	5050 3800 5500 3800
+Entry Wire Line
+	4950 3700 5050 3600
+Entry Wire Line
+	4950 3800 5050 3700
+Entry Wire Line
+	4950 3900 5050 3800
+Entry Wire Line
+	4150 6250 4250 6150
+Entry Wire Line
+	4150 6400 4250 6300
+Entry Wire Line
+	4150 6550 4250 6450
+Entry Wire Line
+	4150 6700 4250 6600
+Wire Bus Line
+	4950 5150 4250 5150
+Wire Wire Line
+	4150 6250 3850 6250
+Wire Wire Line
+	3850 6400 4150 6400
+Wire Wire Line
+	3850 6550 4150 6550
+Wire Wire Line
+	3850 6700 4150 6700
+Text Label 3850 6250 0    50   ~ 0
+SPI.~CS
+Text Label 3850 6400 0    50   ~ 0
+SPI.SCK
+Text Label 3850 6550 0    50   ~ 0
+SPI.MOSI
+Text Label 3850 6700 0    50   ~ 0
+SPI.MISO
+Entry Wire Line
+	5350 4300 5450 4200
+Entry Wire Line
+	5350 4100 5450 4000
+Entry Wire Line
+	5350 4200 5450 4100
+Entry Wire Line
+	5350 4400 5450 4300
+Text Label 5450 4100 2    50   ~ 0
+UART.RX
+Wire Wire Line
+	5450 4100 5500 4100
+Wire Wire Line
+	5450 4200 5500 4200
+Wire Wire Line
+	5450 4300 5500 4300
+Wire Wire Line
+	5450 4000 5500 4000
+Text Label 3850 5800 0    50   ~ 0
+3V0
+NoConn ~ 2550 5950
+NoConn ~ 2550 6100
+NoConn ~ 2550 6250
+NoConn ~ 6700 5050
+$Comp
+L Hammond:1593JGY B1
+U 1 1 5D6B964D
+P 9950 5800
+F 0 "B1" H 10378 5858 100 0000 L CNN
+F 1 "1593JGY" H 10378 5692 100 0000 L CNN
+F 2 "sensor-net-gateway:1593JGY" H 9950 5000 100 0001 C CNN
+F 3 "http://www.hammondmfg.com/pdf/1593J.pdf" H 9950 4850 100 0001 C CNN
+F 4 "HM867-ND" H 9950 5150 100 0001 C CNN "DigiKey_PartNumber"
+F 5 "Hammond Manufacturing" H 9950 5300 100 0001 C CNN "Manufacturer"
+F 6 "1593JGY" H 9950 5450 100 0001 C CNN "Manufacturer_PartNumber"
+	1    9950 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Antenna_Shield AE1
+U 1 1 5D67EE55
+P 4600 5650
+F 0 "AE1" H 4740 5691 50  0000 L CNN
+F 1 "Antenna_Shield" H 4740 5600 50  0000 L CNN
+F 2 "sensor-net-gateway:CONSMA001-G" H 4600 5750 50  0001 C CNN
+F 3 "https://linxtechnologies.com/wp/wp-content/uploads/consma001-g.pdf" H 4600 5750 50  0001 C CNN
+F 4 "CONSMA001-G-ND" H 4600 5650 50  0001 C CNN "DigiKey_PartNumber"
+F 5 "Linx Technologies Inc." H 4600 5650 50  0001 C CNN "Manufacturer"
+F 6 "CONSMA001-G" H 4600 5650 50  0001 C CNN "Manufacturer_PartNumber"
+	1    4600 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 5950 4600 5950
+Wire Wire Line
+	4600 5950 4600 5850
+$Comp
+L power:GND #PWR0101
+U 1 1 5D682B73
+P 4700 6000
+F 0 "#PWR0101" H 4700 5750 50  0001 C CNN
+F 1 "GND" H 4705 5827 50  0000 C CNN
+F 2 "" H 4700 6000 50  0001 C CNN
+F 3 "" H 4700 6000 50  0001 C CNN
+	1    4700 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 6000 4700 5850
+$Sheet
+S 2600 3300 950  1150
+U 5D68470F
+F0 "usb2uart" 50
+F1 "usb2uart.sch" 50
+F2 "UART.TX" I R 3550 3450 50 
+F3 "UART.RX" I R 3550 3600 50 
+F4 "UART.RTS" I R 3550 3750 50 
+F5 "UART.CTS" I R 3550 3900 50 
+F6 "3V0" I L 2600 3600 50 
+F7 "GND" I L 2600 3750 50 
+F8 "VBUS" I L 2600 3450 50 
+F9 "FTDI_DIO0" I L 2600 4000 50 
+F10 "FTDI_DIO1" I L 2600 4150 50 
+F11 "FTDI_DIO3" I L 2600 4300 50 
+$EndSheet
+Text Label 3950 3450 2    50   ~ 0
+UART.TX
+Text Label 3950 3600 2    50   ~ 0
+UART.RX
+Text Label 3950 3900 2    50   ~ 0
+UART.CTS
+Text Label 3950 3750 2    50   ~ 0
+UART.RTS
+Entry Wire Line
+	3950 3450 4050 3550
+Entry Wire Line
+	3950 3600 4050 3700
+Entry Wire Line
+	3950 3750 4050 3850
+Entry Wire Line
+	3950 3900 4050 4000
+Wire Wire Line
+	3950 3450 3550 3450
+Wire Wire Line
+	3550 3600 3950 3600
+Wire Wire Line
+	3550 3750 3950 3750
+Wire Wire Line
+	3550 3900 3950 3900
+Wire Bus Line
+	4050 4600 5350 4600
+$Comp
+L power:GND #PWR01
+U 1 1 5D6B3835
+P 2450 3750
+F 0 "#PWR01" H 2450 3500 50  0001 C CNN
+F 1 "GND" H 2455 3577 50  0000 C CNN
+F 2 "" H 2450 3750 50  0001 C CNN
+F 3 "" H 2450 3750 50  0001 C CNN
+	1    2450 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2450 3750 2600 3750
+Text Label 2600 3600 2    50   ~ 0
+3V0
+Text Label 2600 3450 2    50   ~ 0
+VBUS
+$Comp
+L MicrochipTechnology:ATECC508A-MAHCZ-S A1
+U 1 1 5D6A8C13
+P 8650 3650
+F 0 "A1" H 8650 3235 50  0000 C CNN
+F 1 "ATECC508A-MAHCZ-S" H 8650 3326 50  0000 C CNN
+F 2 "MicrochipTechnology:ATECC508A-MAHCZ-S" H 8650 2750 50  0001 C CNN
+F 3 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en603815" H 8650 2850 50  0001 C CNN
+F 4 "1611-ATECC508A-MAHCZ-SCT-ND" H 8650 3150 50  0001 C CNN "DigiKey_PartNumber"
+F 5 "Microchip Technology" H 8650 3050 50  0001 C CNN "Manufacturer"
+F 6 "ATECC508A-MAHCZ-S" H 8650 2950 50  0001 C CNN "Manufacturer_PartNumber"
+	1    8650 3650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5D6ACC13
+P 9350 4500
+F 0 "#PWR02" H 9350 4250 50  0001 C CNN
+F 1 "GND" H 9355 4327 50  0000 C CNN
+F 2 "" H 9350 4500 50  0001 C CNN
+F 3 "" H 9350 4500 50  0001 C CNN
+	1    9350 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 3500 9150 3500
+$Comp
+L Device:R R5
+U 1 1 5D6AE50F
+P 7700 3800
+F 0 "R5" H 7770 3846 50  0000 L CNN
+F 1 "10k" H 7770 3755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7630 3800 50  0001 C CNN
+F 3 "~" H 7700 3800 50  0001 C CNN
+	1    7700 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5D6AE573
+P 7400 3800
+F 0 "R4" H 7470 3846 50  0000 L CNN
+F 1 "10k" H 7470 3755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7330 3800 50  0001 C CNN
+F 3 "~" H 7400 3800 50  0001 C CNN
+	1    7400 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 3500 7700 3500
+Wire Wire Line
+	6700 3600 7400 3600
+Wire Wire Line
+	8150 4000 8150 3800
+Wire Wire Line
+	6700 4000 7400 4000
+Wire Wire Line
+	7400 3650 7400 3600
+Connection ~ 7400 3600
+Wire Wire Line
+	7400 3600 7500 3600
+Wire Wire Line
+	7700 3650 7700 3500
+Connection ~ 7700 3500
+Wire Wire Line
+	7700 3500 8150 3500
+Wire Wire Line
+	7700 3950 7700 4000
+Connection ~ 7700 4000
+Wire Wire Line
+	7700 4000 8150 4000
+Wire Wire Line
+	7400 3950 7400 4000
+Connection ~ 7400 4000
+Wire Wire Line
+	7400 4000 7700 4000
+$Comp
+L Device:C C22
+U 1 1 5D6BA9D2
+P 8150 4150
+F 0 "C22" H 8265 4196 50  0000 L CNN
+F 1 "0.1µF" H 8265 4105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8188 4000 50  0001 C CNN
+F 3 "~" H 8150 4150 50  0001 C CNN
+	1    8150 4150
+	1    0    0    -1  
+$EndComp
+Connection ~ 8150 4000
+Wire Wire Line
+	9350 3500 9350 4400
+Wire Wire Line
+	8150 4300 8150 4400
+Wire Wire Line
+	8150 4400 9350 4400
+Connection ~ 9350 4400
+Wire Wire Line
+	9350 4400 9350 4500
+$Comp
+L Hochreiner:logo L3
+U 1 1 5D6B322B
+P 8800 5800
+F 0 "L3" H 8825 5846 50  0000 L CNN
+F 1 "logo" H 8825 5755 50  0000 L CNN
+F 2 "Hochreiner:logo" H 8700 5650 50  0001 C CNN
+F 3 "" H 8800 5800 50  0001 C CNN
+	1    8800 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5D6B6E63
+P 7600 3150
+F 0 "#PWR0102" H 7600 2900 50  0001 C CNN
+F 1 "GND" H 7605 2977 50  0000 C CNN
+F 2 "" H 7600 3150 50  0001 C CNN
+F 3 "" H 7600 3150 50  0001 C CNN
+	1    7600 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 3000 7700 3500
+Wire Wire Line
+	7500 3000 7500 3600
+Connection ~ 7500 3600
+Wire Wire Line
+	7500 3600 8150 3600
+Wire Wire Line
+	7600 3150 7600 3000
+NoConn ~ 7800 3000
+Text Label 7400 3000 3    50   ~ 0
+3V0
+$Comp
+L power:GND #PWR0103
+U 1 1 5D6B76B2
+P 10550 6100
+F 0 "#PWR0103" H 10550 5850 50  0001 C CNN
+F 1 "GND" H 10555 5927 50  0000 C CNN
+F 2 "" H 10550 6100 50  0001 C CNN
+F 3 "" H 10550 6100 50  0001 C CNN
+	1    10550 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10550 6100 10550 6000
+Wire Wire Line
+	10550 6000 10350 6000
+Text Label 6700 4300 0    50   ~ 0
+RFM_RESET
+Text Label 3850 6100 0    50   ~ 0
+RFM_RESET
+Text Label 2550 6700 2    50   ~ 0
+RFM_DIO0
+Text Label 2550 6550 2    50   ~ 0
+RFM_DIO1
+Text Label 6700 4400 0    50   ~ 0
+RFM_DIO0
+Text Label 6700 4500 0    50   ~ 0
+RFM_DIO1
+Text Label 2600 4000 2    50   ~ 0
+FTDI_IO0
+Text Label 5500 4750 2    50   ~ 0
+FTDI_IO0
+Text Label 2600 4150 2    50   ~ 0
+FTDI_IO1
+Text Label 5500 4850 2    50   ~ 0
+FTDI_IO1
+Text Label 2600 4300 2    50   ~ 0
+FTDI_IO3
+Text Label 5500 4950 2    50   ~ 0
+FTDI_IO3
+Text Label 2550 6400 2    50   ~ 0
+RFM_DIO2
+Text Label 6700 4600 0    50   ~ 0
+RFM_DIO2
+NoConn ~ 6700 4950
+NoConn ~ 6700 4850
+NoConn ~ 6700 4750
+$Comp
+L Harwin:M50-3130545 M1
+U 1 1 5D6D3DFB
+P 7600 2700
+F 0 "M1" V 7540 2372 50  0000 R CNN
+F 1 "M50-3130545" V 7449 2372 50  0000 R CNN
+F 2 "Harwin:M50-3130545" H 7600 1800 50  0001 C CNN
+F 3 "https://cdn.harwin.com/pdfs/M50-313.pdf" H 7600 1900 50  0001 C CNN
+F 4 "952-3585-ND" H 7600 2200 50  0001 C CNN "DigiKey_PartNumber"
+F 5 "Harwin Inc." H 7600 2100 50  0001 C CNN "Manufacturer"
+F 6 "M50-3130545" H 7600 2000 50  0001 C CNN "Manufacturer_PartNumber"
+	1    7600 2700
+	0    -1   -1   0   
+$EndComp
+Wire Bus Line
+	4250 5150 4250 6600
+Wire Bus Line
+	5350 4100 5350 4600
+Wire Bus Line
+	4950 3600 4950 5150
+Wire Bus Line
+	4050 3550 4050 4600
+$EndSCHEMATC

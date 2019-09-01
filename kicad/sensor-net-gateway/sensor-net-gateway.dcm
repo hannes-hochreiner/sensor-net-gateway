@@ -1,0 +1,35 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP DSC6011HE2A-032.0000
+D 32MHz XO (Standard) CMOS Oscillator 1.8V ~ 3.3V Enable/Disable 4-SMD, No Lead
+$ENDCMP
+#
+$CMP FT230XQ
+D Full Speed USB to Basic UART, QFN-16
+K FTDI USB UART interface converter
+F http://www.ftdichip.com/Products/ICs/FT230X.html
+$ENDCMP
+#
+$CMP Ferrite_Bead
+D Ferrite bead
+K L ferrite bead inductor filter
+F ~
+$ENDCMP
+#
+$CMP MIC94310-MYM5-TR
+D Linear Voltage Regulator IC  1 Output  200mA SOT-23-5
+$ENDCMP
+#
+$CMP STM32L011G3Ux
+D ARM Cortex-M0+ MCU, 8KB flash, 2KB RAM, 32MHz, 1.65-3.6V, 24 GPIO, UFQFPN-28
+K ARM Cortex-M0+ STM32L0 STM32L0x1
+F http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00206508.pdf
+$ENDCMP
+#
+$CMP STM32L011G4Ux
+D ARM Cortex-M0+ MCU, 16KB flash, 2KB RAM, 32MHz, 1.65-3.6V, 24 GPIO, UFQFPN-28
+K ARM Cortex-M0+ STM32L0 STM32L0x1
+F http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00206508.pdf
+$ENDCMP
+#
+#End Doc Library
