@@ -26,9 +26,9 @@ void spi_init() {
 
   GPIOA->BSRR = (GPIO_BSRR_BS_4);
  
-  SPI1->CR1 = ((SPI_CR1_MSTR) | (SPI_CR1_BR) | (SPI_CR1_SSM) | (SPI_CR1_SSI));
-  // SPI1->CR1 = ((SPI_CR1_MSTR) | (SPI_CR1_SSM) | (SPI_CR1_SSI));
-  // SPI1->CR1 &= ~SPI_CR1_BR;
+  SPI1->CR1 = ((SPI_CR1_MSTR) | (SPI_CR1_SSM) | (SPI_CR1_SSI));
+  // set baud rate to f_clk / 2 (with HSI at 16 MHz => 8 MHz)
+  SPI1->CR1 &= ~SPI_CR1_BR;
   SPI1->CR2 = ((SPI_CR2_TXDMAEN) | (SPI_CR2_RXDMAEN));
 }
 
