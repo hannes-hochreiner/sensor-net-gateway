@@ -48,6 +48,7 @@ src/rtc.c \
 src/system.c \
 src/aes.c \
 src/uart.c \
+src/ll.c \
 src/system_stm32l0xx.c
 
 # ASM sources
@@ -197,6 +198,20 @@ $(BUILD_DIR):
 clean:
 	-rm -fR $(BUILD_DIR)
   
+#######################################
+# tests
+#######################################
+test: test_ll test_ll_memory
+
+test_ll: test_ll_bin
+	build/test_ll
+
+test_ll_memory: test_ll_bin
+	valgrind --leak-check=yes build/test_ll
+
+test_ll_bin: Makefile src/ll.c inc/ll.h test/main.c
+	gcc -Iinc -I/usr/include -lcmocka src/ll.c test/main.c -o build/test_ll
+
 #######################################
 # dependencies
 #######################################

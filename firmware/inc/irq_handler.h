@@ -5,6 +5,7 @@
 #include <stdlib.h>
 #include "stm32l021xx.h"
 #include "result.h"
+#include "ll.h"
 
 typedef void(*void_func_t)();
 
