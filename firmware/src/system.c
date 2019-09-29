@@ -38,7 +38,7 @@ void switch_to_external() {
   RCC->CR |= 0x00080000 | RCC_CR_HSEBYP | RCC_CR_HSEON;
 
   while ((RCC->CR & RCC_CR_HSERDY) != RCC_CR_HSERDY) {
-    __NOP;
+    __NOP();
   }
 
   if ((RCC->CR & RCC_CR_HSERDY) != 0) {
