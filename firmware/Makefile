@@ -48,7 +48,7 @@ src/rtc.c \
 src/system.c \
 src/aes.c \
 src/uart.c \
-src/ll.c \
+/usr/src/ll/ll.c \
 src/system_stm32l0xx.c
 
 # ASM sources
@@ -131,7 +131,8 @@ AS_INCLUDES =
 C_INCLUDES =  \
 -Iinc \
 -I/opt/hannes/STM32Cube/Repository/STM32Cube_FW_L0_V1.11.2/Drivers/CMSIS/Device/ST/STM32L0xx/Include \
--I/opt/hannes/STM32Cube/Repository/STM32Cube_FW_L0_V1.11.2/Drivers/CMSIS/Include
+-I/opt/hannes/STM32Cube/Repository/STM32Cube_FW_L0_V1.11.2/Drivers/CMSIS/Include \
+-I/usr/include/ll
 
 
 # compile gcc flags
@@ -198,20 +199,6 @@ $(BUILD_DIR):
 clean:
 	-rm -fR $(BUILD_DIR)
   
-#######################################
-# tests
-#######################################
-test: test_ll test_ll_memory
-
-test_ll: test_ll_bin
-	build/test_ll
-
-test_ll_memory: test_ll_bin
-	valgrind --leak-check=yes build/test_ll
-
-test_ll_bin: Makefile src/ll.c inc/ll.h test/main.c
-	gcc -Iinc -I/usr/include -lcmocka src/ll.c test/main.c -o build/test_ll
-
 #######################################
 # dependencies
 #######################################

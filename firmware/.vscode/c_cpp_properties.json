@@ -7,7 +7,7 @@
                 "./inc",
                 "/opt/hannes/STM32Cube/Repository/STM32Cube_FW_L0_V1.11.2/Drivers/CMSIS/Device/ST/STM32L0xx/Include",
                 "/opt/hannes/STM32Cube/Repository/STM32Cube_FW_L0_V1.11.2/Drivers/CMSIS/Include",
-                "/usr/include"
+                "/usr/include/ll"
             ],
             "defines": [
               "HSE_VALUE=8000000",

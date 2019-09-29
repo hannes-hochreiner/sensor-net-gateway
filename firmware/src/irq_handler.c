@@ -12,13 +12,13 @@ void irq_ll_callback(void *data) {
 result_t add_handler(IRQn_Type num, void_func_t func) {
   switch (num) {
     case DMA1_Channel1_IRQn:
-      return ll_insert(&dma_c1, func);
+      return ll_insert(&dma_c1, func) == LL_RESULT_OK ? RESULT_OK : RESULT_ERROR;
     case DMA1_Channel2_3_IRQn:
-      return ll_insert(&dma_c2_c3, func);
+      return ll_insert(&dma_c2_c3, func) == LL_RESULT_OK ? RESULT_OK : RESULT_ERROR;
     case DMA1_Channel4_5_IRQn:
-      return ll_insert(&dma_c4_c5, func);
+      return ll_insert(&dma_c4_c5, func) == LL_RESULT_OK ? RESULT_OK : RESULT_ERROR;
     case EXTI4_15_IRQn:
-      return ll_insert(&exti4_15, func);
+      return ll_insert(&exti4_15, func) == LL_RESULT_OK ? RESULT_OK : RESULT_ERROR;
     default:
       return RESULT_ERROR;
   }
@@ -27,13 +27,13 @@ result_t add_handler(IRQn_Type num, void_func_t func) {
 result_t remove_handler(IRQn_Type num, void_func_t func) {
   switch (num) {
     case DMA1_Channel1_IRQn:
-      return ll_remove(&dma_c1, func);
+      return ll_remove(&dma_c1, func) == LL_RESULT_OK ? RESULT_OK : RESULT_ERROR;
     case DMA1_Channel2_3_IRQn:
-      return ll_remove(&dma_c2_c3, func);
+      return ll_remove(&dma_c2_c3, func) == LL_RESULT_OK ? RESULT_OK : RESULT_ERROR;
     case DMA1_Channel4_5_IRQn:
-      return ll_remove(&dma_c4_c5, func);
+      return ll_remove(&dma_c4_c5, func) == LL_RESULT_OK ? RESULT_OK : RESULT_ERROR;
     case EXTI4_15_IRQn:
-      return ll_remove(&exti4_15, func);
+      return ll_remove(&exti4_15, func) == LL_RESULT_OK ? RESULT_OK : RESULT_ERROR;
     default:
       return RESULT_ERROR;
   }
